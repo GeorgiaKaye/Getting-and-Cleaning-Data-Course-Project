@@ -50,3 +50,4 @@ library(reshape2)
 DATAmelt <- melt(DATA, id = c("x", "V1"),
                       measure.vars = c("Mean" , "StDev"))
 Tidy_data <- dcast(DATAmelt, x + V1 ~ variable, mean)
+Tidy_data
